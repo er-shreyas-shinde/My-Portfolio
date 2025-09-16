@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AI Assistant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- AI Assistant CSS File -->
+  <link href="assets/css/ai-assistant.css" rel="stylesheet">
+
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile2.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Shreyas Shinde</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://x.com/digi_shrey25" class="twitter" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="mailto:shreyasshinde4121@gmail.com" class="email">
+          <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://instagram.com/yourusername" class="instagram" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shreyas-shinde-569b82232/" class="linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/strom-born" class="github" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#certification"><i class="bi bi-patch-check navicon"></i> Certification</a></li>
+        <li><a href="ai-assistant.html" class="active"><i class="bi bi-robot navicon"></i> Echo AI</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">AI Assistant</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">AI Assistant</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- AI Assistant Section -->
+    <section id="ai-assistant-section" class="ai-assistant-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Echo AI</h2>
+        <p>Your intelligent companion for creative writing, technical questions, coding help, and engaging conversations. Ask me anything!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="chatbot-container">
+          <div class="chat-header">
+              <div class="header-content">
+                  <div class="ai-avatar">
+                      <div class="avatar-gradient"></div>
+                      <i class="bi bi-robot"></i>
+                  </div>
+                  <div class="header-text">
+                      <h2>Echo</h2>
+                      <p class="status">
+                          <span class="status-dot"></span>
+                          Online & Ready
+                      </p>
+                  </div>
+              </div>
+              <div class="header-actions">
+                  <button class="action-btn" id="clear-chat" title="Clear Chat">
+                      <i class="bi bi-trash3"></i>
+                  </button>
+              </div>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+              <div class="message bot-message" data-aos="fade-up">
+                  <div class="message-avatar">
+                      <div class="bot-avatar">
+                          <i class="bi bi-robot"></i>
+                      </div>
+                  </div>
+                  <div class="message-content">
+                      <div class="message-bubble">
+                          <p>Hello! I'm Echo, your AI assistant. I can help you with creative writing, technical questions, coding problems, or just have a friendly conversation. What would you like to explore today?</p>
+                      </div>
+                      <div class="message-time">Just now</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="chat-input-area">
+              <div class="input-container">
+                  <div class="input-wrapper">
+                      <textarea 
+                          id="messageInput" 
+                          placeholder="Type your message here..." 
+                          rows="1"
+                          maxlength="2000"
+                      ></textarea>
+                      <div class="input-actions">
+                          <button class="emoji-btn" id="emojiBtn" title="Add emoji">
+                              <i class="bi bi-emoji-smile"></i>
+                          </button>
+                          <div class="char-counter">
+                              <span id="charCount">0</span>/2000
+                          </div>
+                          <button class="send-btn" id="sendBtn" disabled title="Send message">
+                              <div class="send-icon">
+                                  <i class="bi bi-send"></i>
+                              </div>
+                              <div class="loading-spinner" style="display: none;">
+                                  <div class="spinner"></div>
+                              </div>
+                          </button>
+                      </div>
+                  <!-- <button class="send-btn" id="sendBtn" disabled title="Send message">
+                      <div class="send-icon">
+                          <i class="bi bi-send"></i>
+                      </div>
+                      <div class="loading-spinner" style="display: none;">
+                          <div class="spinner"></div>
+                      </div>
+                  </button> -->
+              </div>
+              
+              <div class="quick-suggestions" id="quickSuggestions">
+                  <div class="suggestion-chip" data-text="Explain quantum computing in simple terms">
+                      <i class="bi bi-cpu"></i>
+                      <span>Explain quantum computing</span>
+                  </div>
+                  <div class="suggestion-chip" data-text="Write a creative short story about space exploration">
+                      <i class="bi bi-book"></i>
+                      <span>Write a creative story</span>
+                  </div>
+                  <div class="suggestion-chip" data-text="Help me debug this Python code">
+                      <i class="bi bi-code-slash"></i>
+                      <span>Help with coding</span>
+                  </div>
+                  <div class="suggestion-chip" data-text="Generate innovative marketing ideas for my startup">
+                      <i class="bi bi-lightbulb"></i>
+                      <span>Marketing ideas</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Typing indicator template -->
+        <div class="typing-indicator-template" style="display: none;">
+            <div class="message bot-message typing-message">
+                <div class="message-avatar">
+                    <div class="bot-avatar">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                </div>
+                <div class="message-content">
+                    <div class="message-bubble typing-bubble">
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </section><!-- /AI Assistant Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/shreyas-shinde-569b82232/">Shreyas Shinde</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <!-- AI Assistant JS File -->
+  <script src="assets/js/ai-assistant.js"></script>
+
+</body>
+
+</html>
